@@ -1,0 +1,10 @@
+CRITICAL - 2026-04-08 16:03:19 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "index,php"
+[Method: GET, Route: index,php]
+in SYSTEMPATH\Router\Router.php on line 768.
+ 1 SYSTEMPATH\Router\Router.php(219): CodeIgniter\Router\Router->checkDisallowedChars('index,php')
+ 2 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('index,php')
+ 3 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
